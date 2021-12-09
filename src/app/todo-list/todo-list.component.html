@@ -1,0 +1,7 @@
+<ng-content></ng-content>
+<input *ngIf="lists.length" type="text" placeholder="Search List items..." class="form-control" name="listSearch" id="listSearch" [(ngModel)]="searchList">
+<ul class="mylistItmes-lists">
+    <li class="my-3" *ngFor = "let list of lists | filterPipe: searchList; let i = index"> {{ list }}
+        <button class="btn btn-outline-danger rounded-2" (click)="removeItem(i)">REMOVE <fa-icon [icon]="faMinusCircle"></fa-icon></button>
+    </li>      
+</ul>

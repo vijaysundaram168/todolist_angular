@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #eeeeee !important;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.mylistItmes-lists li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 12px;
+    background-color: #ffffff;
+}
